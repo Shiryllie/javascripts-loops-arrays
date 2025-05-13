@@ -21,10 +21,20 @@
 // klaar!
 // ==========================================
 
+for(let i = 0; i<4; i++) {
+    console.log("loop...")
+    if (i > 2){
+        console.log("klaar!")
+    }
+}
+
 
 // ==========================================
 // Opdracht 3. Maak een for-loop die automatisch factuurnummers genereert in het formaat INV-0001, INV-0002, enzovoorts. Zorg ervoor dat je begint bij nummer 1 en dat de nummers oplopen. Er zijn in totaal 8 factuurnummers nodig.
-
+for (let i = 0; i<8; i++)
+{
+    console.log("INV-000"+(i+1));
+}
 // Verwachte uitkomst:
 // 'INV-0001'
 // 'INV-0002'
@@ -42,6 +52,18 @@
 // - Bij 10:00 en 14:00 moet de tekst "Koffiepauze!" toegevoegd worden
 // - Bij 12:00 moet de tekst "Lunchpauze!" toegevoegd worden
 // - Bij 17:00 moet de tekst "Bijna klaar..." toegevoegd worden
+for (let i = 9; i<19; i++){
+    console.log(i+":00");
+    if (i===10 || i===14){
+        console.log(i+":00 Koffiepauze!");
+    }
+    if (i===12){
+        console.log(i+":00 Lunchpauze!");
+    }
+    if (i===17){
+        console.log(i+":00 Bijna klaar...");
+    }
+}
 
 // Verwachte uitkomsten:
 // 9:00
@@ -56,7 +78,17 @@
 // 18:00
 // ==========================================
 
-
+for (let i = 0; i<10; i++){
+    if (i<3){
+        console.log(i);
+    }
+    if (i>2 && i<6){
+        console.log(">"+i);
+    }
+    if (i>5){
+        console.log(">>"+i);
+    }
+}
 // ==========================================
 // Opdracht 5. Maak een for-loop die van 0 tot 9 loopt en de getallen 0 tot 9 logt.
 // Echter, vanaf het getal 3 komt er een > voor ieder getal te staan, en vanaf het getal 6 komt er >> voor ieder getal te staan.
